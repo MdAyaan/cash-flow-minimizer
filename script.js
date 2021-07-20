@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded", function(){
   submitNumberOfElementsInput.addEventListener('click', (e) => {
       e.preventDefault(); 
       var x = document.forms["numberOfElements"]["elements"].value;
-      if( x < 0 ) {
+      if( x <= 0 ) {
         alert("Enter Valid Number of Friends" ) ;
         return 
       }
